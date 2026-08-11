@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: lng_historical_duration_baseline_daily
+    description: >
+      Leakage-safe daily berth-duration baselines calculated using
+      only eligible LNG calls completed before each metric date.
+
+    columns:
+      - name: metric_date
+        data_tests:
+          - not_null
+
+      - name: berth_zone_code
+        data_tests:
+          - not_null
+
+      - name: berth_history_calls
+        data_tests:
+          - not_null
+
+      - name: terminal_history_calls
+        data_tests:
+          - not_null
+
+      - name: baseline_scope
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - historical_berth
+                  - historical_terminal
+                  - insufficient_history
