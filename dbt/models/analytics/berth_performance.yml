@@ -1,0 +1,31 @@
+version: 2
+
+models:
+
+  - name: lng_berth_performance
+    description: >
+      Berth-level LNG performance metrics combining call
+      durations, estimated delays and dataset-window utilisation.
+
+    columns:
+
+      - name: berth_zone_code
+        data_tests:
+          - not_null
+          - unique
+
+      - name: total_calls
+        data_tests:
+          - not_null
+
+      - name: scored_calls
+        data_tests:
+          - not_null
+
+      - name: occupied_minutes
+        data_tests:
+          - not_null
+
+      - name: utilisation_pct
+        data_tests:
+          - not_null
