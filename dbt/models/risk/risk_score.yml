@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: lng_terminal_risk_score_daily
+    description: >
+      Transparent 0-100 daily operational supply-risk index with
+      component contributions and a separate data-confidence measure.
+
+    columns:
+      - name: metric_date
+        data_tests:
+          - not_null
+          - unique
+
+      - name: risk_score
+        data_tests:
+          - not_null
+
+      - name: risk_level
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - low
+                  - moderate
+                  - elevated
+                  - high
+                  - critical
+
+      - name: capacity_points
+        data_tests:
+          - not_null
+
+      - name: saturation_points
+        data_tests:
+          - not_null
+
+      - name: active_delay_points
+        data_tests:
+          - not_null
+
+      - name: active_severe_points
+        data_tests:
+          - not_null
+
+      - name: delay_intensity_points
+        data_tests:
+          - not_null
+
+      - name: utilisation_3d_points
+        data_tests:
+          - not_null
+
+      - name: backlog_points
+        data_tests:
+          - not_null
+
+      - name: data_coverage_score
+        data_tests:
+          - not_null
+
+      - name: score_confidence
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - high
+                  - medium
+                  - low
