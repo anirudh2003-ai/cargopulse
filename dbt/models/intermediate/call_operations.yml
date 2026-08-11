@@ -1,0 +1,35 @@
+version: 2
+
+models:
+
+  - name: int_lng_call_operations
+    description: >
+      Final call-level operational record combining reconstructed
+      berth timing with inbound and outbound terminal movements.
+
+    columns:
+
+      - name: validated_call_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: mmsi
+        data_tests:
+          - not_null
+
+      - name: berth_zone_code
+        data_tests:
+          - not_null
+
+      - name: berth_arrival_time
+        data_tests:
+          - not_null
+
+      - name: berth_departure_time
+        data_tests:
+          - not_null
+
+      - name: movement_coverage
+        data_tests:
+          - not_null
