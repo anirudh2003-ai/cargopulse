@@ -1,0 +1,39 @@
+version: 2
+
+models:
+
+  - name: lng_berth_duration_baseline
+    description: >
+      Historical berth-specific LNG duration statistics calculated
+      from high-confidence, fully observed operational calls.
+
+    columns:
+
+      - name: berth_zone_code
+        data_tests:
+          - not_null
+          - unique
+
+      - name: baseline_calls
+        data_tests:
+          - not_null
+
+      - name: median_minutes
+        data_tests:
+          - not_null
+
+
+  - name: lng_terminal_duration_baseline
+    description: >
+      Terminal-wide LNG duration statistics used as a fallback
+      when berth-specific history is limited.
+
+    columns:
+
+      - name: baseline_calls
+        data_tests:
+          - not_null
+
+      - name: median_minutes
+        data_tests:
+          - not_null
