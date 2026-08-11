@@ -1,0 +1,66 @@
+{
+  "target": {
+    "longitude": -93.8740512,
+    "latitude": 29.7540967,
+    "overall_width_metres": 10000,
+    "rotation_degrees": 0
+  },
+
+  "zones": {
+    "SPL_BERTH_1": {
+      "move_x_metres": 0,
+      "move_y_metres": 0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation_degrees": 0
+    },
+
+    "SPL_BERTH_2": {
+      "move_x_metres": 0,
+      "move_y_metres": 0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation_degrees": 0
+    },
+
+    "SPL_BERTH_3": {
+      "move_x_metres": 0,
+      "move_y_metres": 0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation_degrees": 0
+    },
+
+    "SPL_ANCHORAGE_1": {
+      "move_x_metres": 0,
+      "move_y_metres": 0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation_degrees": 0
+    },
+
+    "SPL_MANOEUVRE": {
+      "move_x_metres": 0,
+      "move_y_metres": 0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation_degrees": 0
+    },
+
+    "SPL_CHANNEL": {
+      "move_x_metres": 0,
+      "move_y_metres": 0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation_degrees": 0
+    },
+
+    "SPL_APPROACH": {
+      "move_x_metres": 0,
+      "move_y_metres": 0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation_degrees": 0
+    }
+  }
+}
