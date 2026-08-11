@@ -1,0 +1,63 @@
+version: 2
+
+models:
+
+  - name: lng_terminal_occupancy_intervals
+    description: >
+      Continuous terminal occupancy intervals derived from
+      reconstructed LNG berth stays.
+
+    columns:
+
+      - name: interval_start
+        data_tests:
+          - not_null
+
+      - name: interval_end
+        data_tests:
+          - not_null
+
+      - name: occupied_berths
+        data_tests:
+          - not_null
+
+      - name: active_calls
+        data_tests:
+          - not_null
+
+      - name: duration_minutes
+        data_tests:
+          - not_null
+
+
+  - name: lng_terminal_daily_metrics
+    description: >
+      Daily LNG terminal utilisation, arrivals, departures,
+      occupancy and delay metrics.
+
+    columns:
+
+      - name: metric_date
+        data_tests:
+          - not_null
+          - unique
+
+      - name: arrivals
+        data_tests:
+          - not_null
+
+      - name: departures
+        data_tests:
+          - not_null
+
+      - name: occupied_berth_minutes
+        data_tests:
+          - not_null
+
+      - name: max_occupied_berths
+        data_tests:
+          - not_null
+
+      - name: terminal_utilisation_pct
+        data_tests:
+          - not_null
