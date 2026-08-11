@@ -1,0 +1,29 @@
+version: 2
+
+models:
+
+  - name: int_lng_operational_calls
+
+    description: >
+      Authoritative reconstructed LNG berth calls. Fragmented
+      same-berth AIS evidence is combined before the dominant
+      berth is selected.
+
+    columns:
+
+      - name: validated_call_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: mmsi
+        data_tests:
+          - not_null
+
+      - name: original_arrival_time
+        data_tests:
+          - not_null
+
+      - name: original_departure_time
+        data_tests:
+          - not_null
