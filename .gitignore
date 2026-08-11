@@ -37,3 +37,9 @@ logs/
 *.log
 tmp/
 temp/
+
+# dbt
+.venv-dbt/
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/

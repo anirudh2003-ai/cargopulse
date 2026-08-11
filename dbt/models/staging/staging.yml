@@ -1,0 +1,20 @@
+version: 2
+
+models:
+
+  - name: stg_ais_positions
+
+    description: >
+      dbt staging interface over the cleaned AIS position table.
+
+    columns:
+
+      - name: mmsi
+        description: Maritime Mobile Service Identity.
+        data_tests:
+          - not_null
+
+      - name: recorded_at
+        description: UTC timestamp of the AIS observation.
+        data_tests:
+          - not_null

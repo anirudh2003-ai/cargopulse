@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+
+  - name: cargopulse_raw
+
+    description: >
+      Core CargoPulse database objects produced outside dbt by
+      ingestion, vessel enrichment and geospatial processing.
+
+    database: cargopulse
+    schema: public
+
+    tables:
+
+      - name: ais_positions
+        description: >
+          Cleaned AIS position observations loaded into
+          PostgreSQL/PostGIS.
+
+      - name: terminal_zones
+        description: >
+          Operational terminal geofences including berths,
+          manoeuvring basin, channel and approach zones.
+
+      - name: vessel_registry
+        description: >
+          Vessel registry and enrichment information.
+
+      - name: confirmed_lng_port_calls
+        description: >
+          Validated LNG vessel calls used by the downstream
+          operational analytics.

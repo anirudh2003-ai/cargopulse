@@ -1,0 +1,25 @@
+cargopulse:
+
+  target: dev
+
+  outputs:
+
+    dev:
+      type: postgres
+
+      host: "{{ env_var('DBT_HOST', 'localhost') }}"
+      port: "{{ env_var('DBT_PORT', '5432') | int }}"
+
+      user: "{{ env_var('DBT_USER', 'cargopulse') }}"
+      password: "{{ env_var('DBT_PASSWORD') }}"
+
+      dbname: "{{ env_var('DBT_DBNAME', 'cargopulse') }}"
+
+      # IMPORTANT:
+      # dbt models initially go into a separate schema so
+      # existing validated public tables/views are untouched.
+      schema: dbt_dev
+
+      threads: 4
+
+      connect_timeout: 10
