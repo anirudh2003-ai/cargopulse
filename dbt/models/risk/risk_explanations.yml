@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: lng_terminal_risk_explanations_daily
+    description: >
+      Human-readable daily operational risk explanations containing
+      risk trends, ranked drivers and dashboard-ready summaries.
+
+    columns:
+      - name: metric_date
+        data_tests:
+          - not_null
+          - unique
+
+      - name: risk_score
+        data_tests:
+          - not_null
+
+      - name: risk_level
+        data_tests:
+          - not_null
+
+      - name: score_confidence
+        data_tests:
+          - not_null
+
+      - name: risk_trend
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - initial
+                  - rising_fast
+                  - rising
+                  - falling_fast
+                  - falling
+                  - stable
+
+      - name: risk_headline
+        data_tests:
+          - not_null
+
+      - name: risk_explanation
+        data_tests:
+          - not_null
