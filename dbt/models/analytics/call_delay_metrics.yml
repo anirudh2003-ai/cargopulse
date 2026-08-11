@@ -1,0 +1,61 @@
+version: 2
+
+models:
+
+  - name: lng_call_delay_metrics
+    description: >
+      Call-level estimated operational delay metrics using
+      berth-specific duration baselines where sufficient history
+      exists and terminal-wide fallback baselines otherwise.
+
+    columns:
+
+      - name: validated_call_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: mmsi
+        data_tests:
+          - not_null
+
+      - name: baseline_scope
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - berth
+                  - terminal
+
+      - name: baseline_sample_size
+        data_tests:
+          - not_null
+
+      - name: expected_duration_minutes
+        data_tests:
+          - not_null
+
+      - name: delay_quality
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - censored
+                  - review
+                  - usable_with_gap
+                  - lower_confidence
+                  - usable
+
+      - name: delay_band
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - normal
+                  - elevated
+                  - high
+                  - severe
+                  - unscored
