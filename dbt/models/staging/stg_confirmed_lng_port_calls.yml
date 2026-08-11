@@ -1,0 +1,27 @@
+version: 2
+
+models:
+
+  - name: stg_confirmed_lng_port_calls
+    description: >
+      Validated LNG terminal calls used as the trusted call
+      population for berth-stay reconstruction.
+
+    columns:
+
+      - name: validated_call_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: mmsi
+        data_tests:
+          - not_null
+
+      - name: arrival_time
+        data_tests:
+          - not_null
+
+      - name: departure_time
+        data_tests:
+          - not_null

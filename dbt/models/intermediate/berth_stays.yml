@@ -1,0 +1,39 @@
+version: 2
+
+models:
+
+  - name: int_lng_berth_stay_candidates
+    description: >
+      Candidate LNG berth-stay fragments reconstructed from
+      same-berth AIS observations using a 20-minute maximum
+      reporting gap.
+
+    columns:
+
+      - name: validated_call_id
+        data_tests:
+          - not_null
+
+      - name: mmsi
+        data_tests:
+          - not_null
+
+      - name: zone_code
+        data_tests:
+          - not_null
+
+      - name: berth_stay_number
+        data_tests:
+          - not_null
+
+      - name: berth_start
+        data_tests:
+          - not_null
+
+      - name: berth_end
+        data_tests:
+          - not_null
+
+      - name: point_count
+        data_tests:
+          - not_null
