@@ -1,0 +1,47 @@
+version: 2
+
+models:
+
+  - name: lng_call_analytics
+    description: >
+      Final call-level LNG analytics output combining operational
+      delay metrics with terminal conditions on the arrival date.
+
+    columns:
+
+      - name: validated_call_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: mmsi
+        data_tests:
+          - not_null
+
+      - name: berth_zone_code
+        data_tests:
+          - not_null
+
+      - name: berth_arrival_time
+        data_tests:
+          - not_null
+
+      - name: berth_departure_time
+        data_tests:
+          - not_null
+
+      - name: delay_band
+        data_tests:
+          - not_null
+
+      - name: delay_quality
+        data_tests:
+          - not_null
+
+      - name: movement_coverage
+        data_tests:
+          - not_null
+
+      - name: arrival_metric_date
+        data_tests:
+          - not_null
