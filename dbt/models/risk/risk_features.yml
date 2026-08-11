@@ -1,0 +1,65 @@
+version: 2
+
+models:
+  - name: lng_terminal_risk_features_daily
+    description: >
+      Leakage-safe daily operational supply-risk features using only
+      information available as of each metric date.
+
+    columns:
+      - name: metric_date
+        data_tests:
+          - not_null
+          - unique
+
+      - name: arrivals
+        data_tests:
+          - not_null
+
+      - name: departures
+        data_tests:
+          - not_null
+
+      - name: terminal_utilisation_pct
+        data_tests:
+          - not_null
+
+      - name: capacity_pressure
+        data_tests:
+          - not_null
+
+      - name: berth_saturation
+        data_tests:
+          - not_null
+
+      - name: active_calls
+        data_tests:
+          - not_null
+
+      - name: active_scored_calls
+        data_tests:
+          - not_null
+
+      - name: active_unscored_calls
+        data_tests:
+          - not_null
+
+      - name: active_delayed_calls
+        data_tests:
+          - not_null
+
+      - name: active_severe_calls
+        data_tests:
+          - not_null
+
+      - name: active_delay_share
+        data_tests:
+          - not_null
+
+      - name: active_severe_share
+        data_tests:
+          - not_null
+
+      - name: unscored_active_share
+        data_tests:
+          - not_null
