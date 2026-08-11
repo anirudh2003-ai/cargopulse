@@ -1,0 +1,39 @@
+version: 2
+
+models:
+
+  - name: int_lng_call_zone_timeline
+    description: >
+      Chronological operational-zone episodes surrounding each
+      reconstructed LNG call, classified as inbound, berth,
+      berth_transition or outbound.
+
+    columns:
+
+      - name: validated_call_id
+        data_tests:
+          - not_null
+
+      - name: episode_number
+        data_tests:
+          - not_null
+
+      - name: zone_code
+        data_tests:
+          - not_null
+
+      - name: episode_start
+        data_tests:
+          - not_null
+
+      - name: episode_end
+        data_tests:
+          - not_null
+
+      - name: point_count
+        data_tests:
+          - not_null
+
+      - name: movement_phase
+        data_tests:
+          - not_null
