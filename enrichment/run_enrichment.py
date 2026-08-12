@@ -3,11 +3,8 @@
 from __future__ import annotations
 
 import argparse
-import os
-from pathlib import Path
 from typing import Any
 
-from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 
 from enrichment.classification import (
@@ -16,27 +13,13 @@ from enrichment.classification import (
 from enrichment.uscg_psix_provider import (
     UscgPsixProvider,
 )
+from pipeline.config import load_settings
 
 
 def load_database_url() -> str:
-    project_root = Path(__file__).resolve().parents[1]
-    env_path = project_root / ".env"
+    """Load the configured CargoPulse database URL."""
 
-    if not env_path.exists():
-        raise FileNotFoundError(
-            f".env was not found at {env_path}"
-        )
-
-    load_dotenv(dotenv_path=env_path)
-
-    database_url = os.getenv("DATABASE_URL")
-
-    if not database_url:
-        raise RuntimeError(
-            "DATABASE_URL is missing from .env"
-        )
-
-    return database_url
+    return load_settings().database_url
 
 
 def optional_integer(value: Any) -> int | None:

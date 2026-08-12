@@ -3,16 +3,15 @@
 from __future__ import annotations
 
 import argparse
-import os
 import sys
 from pathlib import Path
 from typing import Any
 
-from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import Engine
 
 from enrichment.run_enrichment import process_queue
+from pipeline.config import load_settings
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -27,23 +26,9 @@ ENQUEUE_SQL_PATH = (
 
 
 def load_database_url() -> str:
-    """Load DATABASE_URL from the project .env file."""
+    """Load the configured CargoPulse database URL."""
 
-    if not ENV_PATH.exists():
-        raise FileNotFoundError(
-            f".env file was not found at: {ENV_PATH}"
-        )
-
-    load_dotenv(dotenv_path=ENV_PATH)
-
-    database_url = os.getenv("DATABASE_URL")
-
-    if not database_url:
-        raise RuntimeError(
-            "DATABASE_URL is missing from .env"
-        )
-
-    return database_url
+    return load_settings().database_url
 
 
 def verify_required_objects(engine: Engine) -> None:

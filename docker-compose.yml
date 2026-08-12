@@ -148,6 +148,33 @@ services:
         condition: service_healthy
 
 
+
+  cargopulse-cli:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: cargopulse-cli
+
+    working_dir: /opt/cargopulse
+
+    user: "${AIRFLOW_UID:-1000}:0"
+
+    environment:
+      DATABASE_URL: postgresql+psycopg2://cargopulse:cargopulse_dev@postgres:5432/cargopulse
+      PYTHONPATH: /opt/cargopulse
+
+    volumes:
+      - ./data:/opt/cargopulse/data
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+    profiles:
+      - tools
+
+
 volumes:
   postgres_data:
   airflow_postgres_data:

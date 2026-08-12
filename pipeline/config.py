@@ -34,18 +34,17 @@ class Settings:
 def load_settings() -> Settings:
     """Load and validate CargoPulse configuration."""
 
-    if not ENV_PATH.exists():
-        raise FileNotFoundError(
-            f".env file was not found at: {ENV_PATH}"
+    if ENV_PATH.exists():
+        load_dotenv(
+            dotenv_path=ENV_PATH,
+            override=False,
         )
-
-    load_dotenv(dotenv_path=ENV_PATH)
 
     database_url = os.getenv("DATABASE_URL")
 
     if not database_url:
         raise RuntimeError(
-            "DATABASE_URL is missing from .env"
+            "DATABASE_URL is missing from the environment or .env"
         )
 
     return Settings(
