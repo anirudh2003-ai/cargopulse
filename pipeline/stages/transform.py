@@ -19,6 +19,11 @@ logger = get_logger("cargopulse.transform")
 def find_dbt_executable() -> str:
     """Find the CargoPulse dbt executable."""
 
+    system_dbt = shutil.which("dbt")
+
+    if system_dbt:
+        return system_dbt
+
     project_dbt = (
         PROJECT_ROOT
         / ".venv-dbt"
@@ -28,11 +33,6 @@ def find_dbt_executable() -> str:
 
     if project_dbt.exists():
         return str(project_dbt)
-
-    system_dbt = shutil.which("dbt")
-
-    if system_dbt:
-        return system_dbt
 
     raise FileNotFoundError(
         "dbt executable was not found"

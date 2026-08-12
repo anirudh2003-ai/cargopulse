@@ -44,3 +44,6 @@ dbt/target/
 dbt/logs/
 dbt/dbt_packages/
 dbt/profiles/.user.yml
+
+# Airflow runtime files
+airflow/logs/
