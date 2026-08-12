@@ -149,6 +149,51 @@ services:
 
 
 
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: cargopulse-api
+
+    working_dir: /opt/cargopulse
+
+    user: "${AIRFLOW_UID:-1000}:0"
+
+    entrypoint:
+      - uvicorn
+
+    command:
+      - api.main:app
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8000"
+
+    environment:
+      DATABASE_URL: postgresql+psycopg2://cargopulse:cargopulse_dev@postgres:5432/cargopulse
+      PYTHONPATH: /opt/cargopulse
+
+    ports:
+      - "8000:8000"
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=5)"
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+
+
+
   cargopulse-cli:
     build:
       context: .
