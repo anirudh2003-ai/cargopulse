@@ -6,7 +6,6 @@ from api.routes.health import router as health_router
 from api.routes.operations import router as operations_router
 from api.routes.risk import router as risk_router
 
-
 app = FastAPI(
     title="CargoPulse API",
     description=(

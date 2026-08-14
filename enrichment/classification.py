@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-
 NON_LNG_SUBTYPES = {
     "LPG",
     "CRUDE OIL",

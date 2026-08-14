@@ -15,7 +15,6 @@ from sqlalchemy.exc import SQLAlchemyError
 from api.db.database import get_engine
 from api.schemas.health import HealthResponse
 
-
 router = APIRouter(
     tags=["health"],
 )

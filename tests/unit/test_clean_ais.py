@@ -2,14 +2,12 @@
 
 from __future__ import annotations
 
-import pytest
-
-pytestmark = pytest.mark.unit
-
 import pandas as pd
+import pytest
 
 from ingestion.clean_ais import clean_chunk
 
+pytestmark = pytest.mark.unit
 
 def make_row(**overrides):
     row = {

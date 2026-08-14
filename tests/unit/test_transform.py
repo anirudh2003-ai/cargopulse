@@ -4,10 +4,9 @@ from __future__ import annotations
 
 import pytest
 
-pytestmark = pytest.mark.unit
-
 from pipeline.stages.transform import build_dbt_environment
 
+pytestmark = pytest.mark.unit
 
 def test_build_dbt_environment():
     environment = build_dbt_environment(

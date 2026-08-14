@@ -13,7 +13,6 @@ from sqlalchemy.engine import Engine
 from enrichment.run_enrichment import process_queue
 from pipeline.config import load_settings
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 ENV_PATH = PROJECT_ROOT / ".env"

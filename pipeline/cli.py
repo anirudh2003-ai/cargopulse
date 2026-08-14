@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import sys
 from pathlib import Path
 
 from pipeline.logging_config import configure_logging, get_logger, log_event
@@ -16,7 +15,6 @@ from pipeline.stages.quality_gate import run_quality_gate
 from pipeline.stages.transform import run_transform
 from pipeline.stages.validate_database import run_validate_database
 from pipeline.stages.validate_raw import run_validate_raw
-
 
 logger = get_logger("cargopulse.cli")
 

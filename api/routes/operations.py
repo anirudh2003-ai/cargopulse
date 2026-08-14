@@ -24,7 +24,6 @@ from api.services.operations import (
     fetch_terminal_daily_metrics,
 )
 
-
 router = APIRouter(
     prefix="/api/v1",
 )

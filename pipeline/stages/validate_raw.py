@@ -10,7 +10,6 @@ from ingestion.clean_ais import COLUMN_MAPPING
 from pipeline.config import load_settings
 from pipeline.logging_config import get_logger, log_event
 
-
 logger = get_logger("cargopulse.validate_raw")
 
 

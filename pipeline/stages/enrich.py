@@ -5,7 +5,6 @@ from __future__ import annotations
 from pipeline.logging_config import get_logger, log_event
 from pipeline.run import run_pipeline
 
-
 logger = get_logger("cargopulse.enrich")
 
 

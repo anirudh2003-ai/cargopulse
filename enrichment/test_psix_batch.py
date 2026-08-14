@@ -13,7 +13,6 @@ from enrichment.uscg_psix_provider import (
     UscgPsixProvider,
 )
 
-
 INPUT_PATH = Path(
     "data/reference/lng_candidates.csv"
 )

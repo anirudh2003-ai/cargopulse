@@ -8,7 +8,6 @@ import api.routes.risk as risk_routes
 from api.db.database import get_engine
 from api.main import app
 
-
 LATEST_RISK = {
     "metric_date": date(2023, 1, 30),
     "risk_score": 52.8,

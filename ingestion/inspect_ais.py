@@ -2,7 +2,6 @@ from pathlib import Path
 
 import pandas as pd
 
-
 RAW_FOLDER = Path("data/raw")
 
 csv_files = list(RAW_FOLDER.glob("*.csv"))

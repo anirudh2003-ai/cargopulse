@@ -12,14 +12,13 @@ from types import SimpleNamespace
 from unittest.mock import patch
 
 import pytest
-
-pytestmark = pytest.mark.integration
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import Engine
 
 from enrichment.run_enrichment import process_queue
 
+pytestmark = pytest.mark.integration
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 ENV_PATH = PROJECT_ROOT / ".env"

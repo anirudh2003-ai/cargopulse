@@ -12,7 +12,6 @@ import pyarrow.parquet as pq
 from dotenv import load_dotenv
 from sqlalchemy import create_engine
 
-
 COPY_COLUMNS = [
     "mmsi",
     "recorded_at",

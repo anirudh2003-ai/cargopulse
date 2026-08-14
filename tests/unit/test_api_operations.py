@@ -8,7 +8,6 @@ import api.routes.operations as operations_routes
 from api.db.database import get_engine
 from api.main import app
 
-
 CALL_RECORD = {
     "validated_call_id": 34,
     "mmsi": 311001111,

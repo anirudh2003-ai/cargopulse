@@ -7,7 +7,6 @@ from sqlalchemy import create_engine, text
 from pipeline.config import load_settings
 from pipeline.logging_config import get_logger, log_event
 
-
 logger = get_logger("cargopulse.quality_gate")
 
 

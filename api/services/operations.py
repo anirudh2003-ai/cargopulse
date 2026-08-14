@@ -5,7 +5,6 @@ from typing import Any
 from sqlalchemy import text
 from sqlalchemy.engine import Engine
 
-
 CALL_COLUMNS = """
     validated_call_id,
     mmsi,

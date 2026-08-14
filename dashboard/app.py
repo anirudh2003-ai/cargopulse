@@ -17,7 +17,6 @@ from dashboard.api_client import (
     get_terminal_daily,
 )
 
-
 st.set_page_config(
     page_title="CargoPulse",
     page_icon="🚢",

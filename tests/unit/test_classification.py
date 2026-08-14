@@ -4,10 +4,9 @@ from __future__ import annotations
 
 import pytest
 
-pytestmark = pytest.mark.unit
-
 from enrichment.classification import classify_psix_vessel
 
+pytestmark = pytest.mark.unit
 
 @pytest.mark.parametrize(
     (

@@ -7,7 +7,6 @@ import xml.etree.ElementTree as ET
 
 import requests
 
-
 URL = "https://cgmix.uscg.mil/xml/PSIXData.asmx"
 IMO = "9872949"
 VESSEL_NAME = "LNGSHIPS ATHENA"

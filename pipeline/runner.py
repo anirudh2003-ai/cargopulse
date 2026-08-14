@@ -16,7 +16,6 @@ from pipeline.stages.validate_database import (
 )
 from pipeline.stages.validate_raw import run_validate_raw
 
-
 logger = get_logger("cargopulse.runner")
 
 

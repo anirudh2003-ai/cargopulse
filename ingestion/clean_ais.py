@@ -9,7 +9,6 @@ import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-
 COLUMN_MAPPING = {
     "MMSI": "mmsi",
     "BaseDateTime": "recorded_at",

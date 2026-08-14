@@ -12,7 +12,6 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-
 PSIX_URL = "https://cgmix.uscg.mil/xml/PSIXData.asmx"
 USCG_NAMESPACE = "https://cgmix.uscg.mil"
 SOAP_NAMESPACE = "http://schemas.xmlsoap.org/soap/envelope/"

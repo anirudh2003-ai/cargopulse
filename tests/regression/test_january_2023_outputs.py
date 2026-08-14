@@ -7,7 +7,6 @@ from sqlalchemy import create_engine, text
 
 from pipeline.config import load_settings
 
-
 EXPECTED_COUNTS = {
     "confirmed_lng_calls": 34,
     "operational_calls": 34,

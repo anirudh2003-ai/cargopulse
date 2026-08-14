@@ -15,7 +15,6 @@ from enrichment.classification import (
     classify_psix_vessel,
 )
 
-
 INPUT_PATH = Path(
     "data/reference/psix_test_results.csv"
 )

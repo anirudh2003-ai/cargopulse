@@ -1,0 +1,23 @@
+target-version = "py312"
+line-length = 100
+
+extend-exclude = [
+    ".venv",
+    ".venv-dbt",
+    "airflow/logs",
+    "dbt/logs",
+    "dbt/target",
+    "data/raw",
+    "data/bronze",
+    "data/silver",
+    "data/gold",
+]
+
+[lint]
+select = [
+    "E4",
+    "E7",
+    "E9",
+    "F",
+    "I",
+]

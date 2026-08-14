@@ -6,13 +6,9 @@ import os
 from pathlib import Path
 
 import geopandas as gpd
-import pandas as pd
 import numpy as np
+import pandas as pd
 from dotenv import load_dotenv
-from shapely import affinity
-from sklearn.cluster import DBSCAN
-from sklearn.decomposition import PCA
-from sqlalchemy import create_engine, text
 from shapely import affinity, concave_hull
 from shapely.geometry import (
     GeometryCollection,
@@ -23,6 +19,9 @@ from shapely.geometry import (
 )
 from shapely.ops import unary_union
 from shapely.validation import make_valid
+from sklearn.cluster import DBSCAN
+from sklearn.decomposition import PCA
+from sqlalchemy import create_engine, text
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 

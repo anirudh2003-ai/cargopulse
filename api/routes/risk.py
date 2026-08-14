@@ -23,7 +23,6 @@ from api.services.risk import (
     fetch_risk_history,
 )
 
-
 router = APIRouter(
     prefix="/api/v1/risk",
     tags=["risk"],
