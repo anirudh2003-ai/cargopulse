@@ -1,0 +1,41 @@
+imo,mmsi,expected_vessel_name,psix_found,psix_vessel_id,psix_vessel_name,returned_identification,service_type,service_sub_type,cargo_description,flag,status,combined_type,error
+9501186,538005753,ADAM LNG,True,1482487,ADAM LNG,9501186,Tank Ship,LNG,"Vessel is authorized to carry cargoes listed on the Subchapter O 
+Endorsement (SOE)",MARSHALL ISLANDS,Active,"Tank Ship | LNG | Vessel is authorized to carry cargoes listed on the Subchapter O 
+Endorsement (SOE)",
+9862918,215778000,ARISTARCHOS,True,1673727,ARISTARCHOS,9862918,Tank Ship,LNG,LNG; Vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE).,GREECE,Active,Tank Ship | LNG | LNG; Vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE).,
+9850666,563092200,BW MAGNOLIA,True,1604230,BW MAGNOLIA,9850666,Tank Ship,LNG,LNG - Vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE).,SINGAPORE,Active,Tank Ship | LNG | LNG - Vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE).,
+9742807,248516000,CASTILLO DE MERIDA,True,1491780,CASTILLO DE MERIDA,9742807,Tank Ship,LNG,LNG. Vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE).,MALTA,Active,Tank Ship | LNG | LNG. Vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE).,
+9236420,224941000,CATALUNYA SPIRIT,True,651580,SEAPEAK CATALUNYA,9236420,Tank Ship,LNG,LNG,SPAIN,Active,Tank Ship | LNG | LNG,
+9864796,538009123,CELSIUS CANBERRA,True,1650686,CELSIUS CANBERRA,9864796,Tank Ship,LNG,Vessel authorized to carry products listed on the International Certificate of Fitness and Subchapter O Endorsement.,MARSHALL ISLANDS,Active,Tank Ship | LNG | Vessel authorized to carry products listed on the International Certificate of Fitness and Subchapter O Endorsement.,
+9878723,538009151,CELSIUS CAROLINA,True,1696262,CELSIUS CAROLINA,9878723,Tank Ship,LNG,Products listed on the International Certificate of Fitness of liquified gases in bulk subject to conditions noted on the Subchapter O Endorsement - LNG.,MARSHALL ISLANDS,Active,Tank Ship | LNG | Products listed on the International Certificate of Fitness of liquified gases in bulk subject to conditions noted on the Subchapter O Endorsement - LNG.,
+9886744,229416000,CLEAN COPANO,True,1744512,CLEAN COPANO,9886744,Tank Ship,LNG,Vessel is authorized to carry products listed on the Inernational Certificate of Fitness in accordance with the USCG issued Sub O Endorsement(LNG).,MALTA,Active,Tank Ship | LNG | Vessel is authorized to carry products listed on the Inernational Certificate of Fitness in accordance with the USCG issued Sub O Endorsement(LNG).,
+9863182,215578000,DORADO LNG,True,1649556,DORADO LNG,9863182,Tank Ship,LNG,LNG; Vessel is authorized to carry products listed on the Subchapter O Endorsement (SOE),MALTA,Active,Tank Ship | LNG | LNG; Vessel is authorized to carry products listed on the Subchapter O Endorsement (SOE),
+9744025,310779000,GASLOG GLADSTONE,True,1544122,GASLOG GLADSTONE,9744025,Tank Ship,LNG,LNG - IAW requirements on the Sub O Endorsement,BERMUDA,Active,Tank Ship | LNG | LNG - IAW requirements on the Sub O Endorsement,
+9748904,310773000,GASLOG HONGKONG,True,1485012,GASLOG HONG KONG,9748904,Tank Ship,LNG,"Vessel is authorized to carry cargoes listed on the Subchapter O 
+Endorsement (SOE)",BERMUDA,Active,"Tank Ship | LNG | Vessel is authorized to carry cargoes listed on the Subchapter O 
+Endorsement (SOE)",
+9626273,310657000,GASLOG SYDNEY,True,1236508,GASLOG SYDNEY,9626273,Tank Ship,LNG,LNG,BERMUDA,Active,Tank Ship | LNG | LNG,
+9876660,310817000,GASLOG WELLINGTON,True,1672441,GASLOG WELLINGTON,9876660,Tank Ship,LNG,LNG. Vessel is authorized to carry cargoes listed on the  Subchapter O Endorsement (SOE).,BERMUDA,Active,Tank Ship | LNG | LNG. Vessel is authorized to carry cargoes listed on the  Subchapter O Endorsement (SOE).,
+9855812,310795000,GASLOG WESTMINSTER,True,1616435,GASLOG WESTMINSTER,9855812,Tank Ship,LNG,LNG,BERMUDA,Active,Tank Ship | LNG | LNG,
+9880477,538009406,GLOBAL SEALINE,True,1711878,GLOBAL SEALINE,9880477,Tank Ship,LNG,Vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE),MARSHALL ISLANDS,Active,Tank Ship | LNG | Vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE),
+9880465,538009405,GLOBAL SEA SPIRIT,True,1704332,GLOBAL SEA SPIRIT,9880465,Tank Ship,LNG,"LNG. Vessel is authorized to carry cargoes listed on the Subchapter ""O"" Endorsement (SOE).",MARSHALL ISLANDS,Active,"Tank Ship | LNG | LNG. Vessel is authorized to carry cargoes listed on the Subchapter ""O"" Endorsement (SOE).",
+9253105,538002656,GOLAR ARCTIC,True,669536,GOLAR ARCTIC,9253105,Tank Ship,LNG,LNG,MARSHALL ISLANDS,Active,Tank Ship | LNG | LNG,
+9303560,538003804,GOLAR GRAND,True,874516,NFE GRAND,9303560,Tank Ship,LNG,LNG,MARSHALL ISLANDS,Active,Tank Ship | LNG | LNG,
+9624914,538004980,GOLAR SEAL,True,1272620,GOLAR SEAL,9624914,Tank Ship,LNG,Vessel is authorized to carry products listed on the International Certificate of Fitness in accordance with the USCG issued Sub O Endorsement.,MARSHALL ISLANDS,Active,Tank Ship | LNG | Vessel is authorized to carry products listed on the International Certificate of Fitness in accordance with the USCG issued Sub O Endorsement.,
+9903920,311001111,GRACE FREESIA,True,1733065,GRACE FREESIA,9903920,Tank Ship,LNG,LNG,BAHAMAS,Active,Tank Ship | LNG | LNG,
+9372999,370983000,HYUNDAI ECOPIA,True,1610327,HYUNDAI ECOPIA,9372999,Tank Ship,LNG,LNG,PANAMA,Active,Tank Ship | LNG | LNG,
+9870525,636020078,KOOL ORCA,True,1652248,KOOL ORCA,9870525,Tank Ship,LNG,LNG,LIBERIA,Active,Tank Ship | LNG | LNG,
+9771913,357315000,LNG SCHNEEWEISSCHEN,True,1516615,LNG SCHNEEWEISSCHEN,9771913,Tank Ship,LNG,LNG,PANAMA,Active,Tank Ship | LNG | LNG,
+9872949,215762000,LNGSHIPS ATHENA,True,1659834,LNGSHIPS ATHENA,9872949,Tank Ship,LNG,LNG vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE).,MALTA,Active,Tank Ship | LNG | LNG vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE).,
+9767950,241579000,MARAN GAS SPETSES,True,1513892,MARAN GAS SPETSES,9767950,Tank Ship,LNG,LNG Vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE).,GREECE,Active,Tank Ship | LNG | LNG Vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE).,
+9854375,215889000,MINERVA LIMNOS,True,1673726,MINERVA LIMNOS,9854375,Tank Ship,LNG,"Vessel is authorized to carry cargoes listed on the Subchapter O 
+Endorsement (SOE)",MALTA,Active,"Tank Ship | LNG | Vessel is authorized to carry cargoes listed on the Subchapter O 
+Endorsement (SOE)",
+9878876,636021030,MU LAN,True,1702526,MU LAN,9878876,Tank Ship,LNG,LNG,LIBERIA,Active,Tank Ship | LNG | LNG,
+9750220,477096200,PAN ASIA,True,1473923,PAN ASIA,9750220,Tank Ship,LNG,LNG. Vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE).,HONG KONG,Active,Tank Ship | LNG | LNG. Vessel is authorized to carry cargoes listed on the Subchapter O Endorsement (SOE).,
+9477593,259082000,RIBERA DEL DUERO KNU,True,1103484,RIBERA DEL DUERO KNUTSEN,9477593,Tank Ship,LNG,LNG - Vessel is authorized to carry cargoes listed on the subchapter O Endorsement (SOE).,NORWAY,Active,Tank Ship | LNG | LNG - Vessel is authorized to carry cargoes listed on the subchapter O Endorsement (SOE).,
+9771080,408919000,SEAPEAK BAHRAIN,True,1531769,SEAPEAK BAHRAIN,9771080,Tank Ship,LNG,LNG,BAHRAIN,Active,Tank Ship | LNG | LNG,
+9414632,224072000,SEVILLA KNUTSEN,True,1106017,SEVILLA KNUTSEN,9414632,Tank Ship,LNG,"VESSEL IS AUTHORZED TO CARRY PRDUCTS LISTED ON THE INTERNATIONAL CERTIFICATE OF FITNESS AND OTHER PRODUCTS"" SUBCHAPTER O ENDORSEMENT""",SPAIN,Active,"Tank Ship | LNG | VESSEL IS AUTHORZED TO CARRY PRDUCTS LISTED ON THE INTERNATIONAL CERTIFICATE OF FITNESS AND OTHER PRODUCTS"" SUBCHAPTER O ENDORSEMENT""",
+9761839,355658000,SM SEAHAWK,True,1447223,SM SEAHAWK,9761839,Tank Ship,LNG,LNG,PANAMA,Active,Tank Ship | LNG | LNG,
+9383900,235099946,STENA CRYSTAL SKY,True,1146602,BW ENN CRYSTAL SKY,9383900,Tank Ship,LNG,LNG,SINGAPORE,Active,Tank Ship | LNG | LNG,
+9861809,215888000,TRANSGAS POWER,True,1687442,TRANSGAS POWER,9861809,Tank Ship,LNG,LNG,MALTA,Active,Tank Ship | LNG | LNG,

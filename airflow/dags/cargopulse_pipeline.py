@@ -96,6 +96,18 @@ def cargopulse_pipeline():
         run_load()
 
     @task(
+        task_id="detect_port_calls",
+        retries=1,
+        retry_delay=timedelta(minutes=2),
+    )
+    def detect_port_calls() -> None:
+        from pipeline.stages.detect_calls import (
+            run_detect_calls,
+        )
+
+        run_detect_calls()
+
+    @task(
         task_id="enrich_vessels",
         retries=2,
         retry_delay=timedelta(minutes=5),
@@ -163,6 +175,7 @@ def cargopulse_pipeline():
     ingest_task = ingest_ais()
     validate_raw_task = validate_raw()
     load_task = load_postgres()
+    detect_calls_task = detect_port_calls()
     enrich_task = enrich_vessels()
     validate_database_task = validate_database()
     dbt_task = dbt_build()
@@ -173,6 +186,7 @@ def cargopulse_pipeline():
         ingest_task
         >> validate_raw_task
         >> load_task
+        >> detect_calls_task
         >> enrich_task
         >> validate_database_task
         >> dbt_task

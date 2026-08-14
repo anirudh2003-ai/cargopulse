@@ -1,0 +1,4 @@
+berth_zone_code,total_calls,scored_calls,elevated_calls,high_delay_calls,severe_delay_calls,median_duration_minutes,p90_duration_minutes,mean_estimated_delay_minutes,occupied_minutes,utilisation_pct
+SPL_BERTH_1,12,11,2,0,1,2571.7,3094.7383333333337,168.62878787878796,29274.866666666665,67.76594735026802
+SPL_BERTH_2,11,8,1,0,1,2513.2,4208.4,377.01458333333335,30076.733333333334,69.62212162200743
+SPL_BERTH_3,11,10,1,0,1,2664.45,3491.4666666666667,204.33166666666665,29009.216666666667,67.15101632022863

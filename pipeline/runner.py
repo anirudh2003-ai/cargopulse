@@ -5,6 +5,7 @@ from __future__ import annotations
 from pathlib import Path
 
 from pipeline.logging_config import get_logger, log_event
+from pipeline.stages.detect_calls import run_detect_calls
 from pipeline.stages.enrich import run_enrich
 from pipeline.stages.export import run_export
 from pipeline.stages.ingest import run_ingest
@@ -43,6 +44,8 @@ def run_all(
     run_load(
         parquet_path=silver_path,
     )
+
+    run_detect_calls()
 
     run_enrich(
         enrichment_limit=enrichment_limit,

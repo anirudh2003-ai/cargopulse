@@ -1,49 +1,33 @@
-# Secrets and environment variables
+# NEVER COMMIT SECRETS
 .env
 .env.*
 !.env.example
+dbt/profiles/.user.yml
 
-# Python environments and generated files
+# Local Python environments
 .venv/
+.venv-dbt/
 venv/
+
+# Python caches
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.ruff_cache/
 .coverage
 htmlcov/
 
-# IDE and operating-system files
+# IDE / OS metadata
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+*:Zone.Identifier
 
-# Database backups
-backups/
-*.dump
-*.backup
-
-# Large or generated datasets
-data/raw/
-data/bronze/
-data/silver/
-data/gold/
-
-# Generated API test output
-data/reference/psix_test_results.csv
-
-# Logs and temporary files
-logs/
-*.log
-tmp/
-temp/
-
-# dbt
-.venv-dbt/
+# Generated dbt artefacts
 dbt/target/
 dbt/logs/
 dbt/dbt_packages/
-dbt/profiles/.user.yml
 
-# Airflow runtime files
+# Runtime logs
 airflow/logs/
